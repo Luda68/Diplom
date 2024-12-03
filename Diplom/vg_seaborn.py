@@ -11,7 +11,8 @@ dinamic_by_region = vg_data[
 
 sns.set_theme(style="darkgrid")  #устанавливается темная сетка фона
 
-fig = plt.figure(figsize=(12, 6))
+# создание линейного графика с помощью функции lineplot
+fig = plt.figure(figsize=(12, 6)) # устанавливаем размер фигуры в дюймах (ширина, высота)
 lineplot = sns.lineplot(data=dinamic_by_region)
 lineplot.set_title('Динамика продаж видеоигр', fontsize=16)
 lineplot.set_xlabel('Год выпуска')

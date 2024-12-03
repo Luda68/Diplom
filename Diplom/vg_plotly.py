@@ -11,6 +11,10 @@ dinamic_by_region = vg_data[
 # линейный график
 fig = px.line(vg_data, x='Year_of_Release', y='Global_Sales', title='Динамика продаж видеоигр - Plotly',
                 labels={'Year_of_Release': 'Год выпуска', 'Global_Sales': 'Суммарный объём продаж'}).update_layout(font_size=15)
+# update_layout(font_size=15) установление размера шрифта для какого-либо элемента макета
+# графика, например, заголовка или меток осей.
+
+# настраиваем заголовки осей
 fig.update_layout(xaxis_title='Год выпуска', yaxis_title='Суммарный объём продаж')
 
 

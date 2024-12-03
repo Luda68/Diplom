@@ -12,6 +12,11 @@ iris = pd.read_csv(url, header=None, names=columns)
 
 fig = px.histogram(iris, x='sepal_length', color='species', barmode='overlay', title='Гистограмма длины чашелистика (Sepal Length) - Plotly',
                    labels={'sepal_length': 'Длина чашелистика (cm)', 'count': 'Частота'})
+# barmode='overlay' — режим наложения групп гистограммы, при котором они будут
+# накладываться друг на друга;  barmode - аргумент, который позволяет указать режим
+# диаграммы, например, group, overlay или relative
+# labels — метки для осей
 
 fig.update_layout(xaxis_title='Длина чашелистика (cm)', yaxis_title='Частота')
+# метод для настройки меток и заголовков на графике
 fig.show()
